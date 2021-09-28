@@ -1,0 +1,35 @@
+//- page-a.pug
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    nav#nav 
+        ul 
+            li #[a(href="/") Home] 
+            li #[a(href="/") About us]
+            li #[a(href="/") Services]
+            li #[a(href="/contact") Contact us]
+    section#intro
+        div.big Welcome to ST Dance Academy
+        div.small Eat Sleep Dance Repeat 
+    section#mission
+        h2 Our Mission   
+        div#one.card 
+          h3  Dance Perfection  
+        div#two.card 
+          h3  Dance the way you like 
+        div#three.card 
+          h3  Expert Teaching 
+    section#sponsors
+        h2 Our Sponsors  
+        div#spimg
+          img(src="../static/sp1.jpg",alt="Image not found",class="spimg")
+          img(src="../static/sp2.jpg",alt="Image not found",class="spimg")
+          img(src="../static/sp3.jpg",alt="Image not found",class="spimg")
+          img(src="../static/sp4.jpg",alt="Image not found",class="spimg")
+    
