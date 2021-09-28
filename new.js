@@ -8,7 +8,7 @@ app.use(express.urlencoded())//this is use to give input deta in express
 
 // PUG SPECIFIC STUF
 app.set('view engine', 'pug')// Set the template engine as pugs
-app.set('views',path.join(__dirname,'views'))// set the viwe directroy
+// app.set('views',path.join(__dirname,'views'))// set the viwe directroy
 
 // ENDPOINT
 app.get('/',(req,res)=>{
